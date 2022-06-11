@@ -1,0 +1,6 @@
+.*
+!.gitignore
+Linux_Terminal_Eric.term
+Miniconda3-latest-Linux-x86_64.sh
+miniconda3/**
+unused/**
