@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stroke Analysis</title>
+    <!--<style>
+      #main-title{
+        color: purple;
+      }
+      .heading {
+        font-size: 50px;
+      }
+      #machine-learning{
+        color:blue;
+      }
+      #ml-p{
+        color:pink;
+      }
+      h2.ml-p2{
+        color:green;
+      }
+    </style>-->
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <h1 id="main-title" class='heading'>
+      This is my website on strokes
+    </h1>
+    <p>
+      Strokes impact 1 in 4 adults over 25.<br> stroke awareness
+    </p>
+    <h1 class='heading'>
+    Exploratory Data Analysis
+    </h1>
+    <p>
+      info in eda
+    </p>
+    <div id='machine-learning'>
+      <h1>
+      Machine learning
+      </h1>
+      <p>
+        this is information about machine learning
+      </p>
+      <h2 class='ml-p2'>
+        Decision Tree Classifier
+      </h2>
+      <p id='ml-p'>
+        Info on Decision Tree Classifier
+      </p>
+      <p class='ml-p2'>
+        more info on decision tree classifier
+      </p>
+      <img
+           src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAC8CAMAAAC672BgAAAA7VBMVEX///8Dof8Amv8An/8Anf/r9f+Dxf/m8v+q1f8AAAC02v/3+/8epP+63f98wv+Xzf+h0f9luf9btf9uvP8AmP+/4P/V6v8xqf+Myf/a7f9Gr/8To//N5//I5P/x8fHNzc3u7u6Pj4+ZmZlkZGRvb2+FhYV9fX3j4+Ozs7Pa2to8rP8AkP/CwsI4ODhmZmalpaVHR0dXV1c1NTUnJydPT0+5ubkYGBisrKwTExNCQkJPV15tcnmeo6gvLCkgHBi6ube4w8+Voa5peIfY4uxPnd1lret+eXJUTUU/NyxnYVoeEgAUBQCQv+ttotJGgLHTbFeaAAALIUlEQVR4nO2dCYOiyBWAKaqQo7kLKCjAa7q1Raednume3kky2RybPZJN/v/PSaF9oIA3q7b1zaEi8OCzeBTCQ0HgcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgczmkSaFuQHntpGyYU0caI7rGXtmEsBDYGOsde2obhMgpwGQW4jAJcRoGiDMhlvK0rjrmMV4QQwSyGOoEAxhnSQYwI80MuUAa0cOTJ2hVNEgdmsm/L4yg0IlNowcuTIUrplamMEyX1bdHG48huKYGRKpZ4eS0DuqnnJlEoYUMxkRtYfiwQLfRDC16eDJARtrY221QczHIGNSF0ITJdPbvMBAoACjUK4awpwPnf4u72wmQAiOZ/EECk1B27NBmscaSJQmVZj3xj+a3LkwFCPdAyR8Eo4jKApyQGcRUvypbfuTwZceRFimmFUOE5A8BWiqGhwdguHbddnox8hwLY3qTiGPYCZdTDZXAZXAaXwWUU4DIKhJ5YBuoxqBjsvffTi1dlBGHypz//peatS2P4Ue0MP/7QOfZynADtD+pt/jhRH7pHXpSjc6P2Xp721ZtjLsnRmarX7bdX7Wv16XjLcmQm6qfh4pB3njpUYVKzeiOWN8tDJ+p9t2rs7o0wOOBiHYdBv9Pp9cpr/ZI3y9Skjul0Mu0Nb26GVW+eCf3b/tNj+UO9Ufu1k7DUUeXpvn03fZr22xVvnQs3wrfO4HEpLy7mzTLDz1/LbelauHmc5GbPnMWmXc6bZapTx1Bon/NWUmb0uSpvlum/dUDeK93avFmiJnW8H1blzTKjz19HjS3KsVmXN8vU9TrOnk3yZpl3mTpGn3fsaLfv3lvq6N7vsUajL+8qdWyXN8s8qvfn3PEssn3eLPNOUsdEfThEr5Ed2J19R3z0/WBfUIy+fDnr1MHy5iE/zkf1w/mmjn3zZpneuaaOqTo4/Od4nqnjQHmzzPmljtH3vzb3xe6P6t3JpY4rqZ6//b3m3UNEuJL+8c/60A2t7Rq0qlPIL2eSq84ji6JHt4pg1UWIUV1gDze0tmsoXdC7wTUG251Wt3eIYDa0tmvgMgpwGQW4jAJcRgEuo0BRBpo/X1u1u4sMuDRf+Pr/rGxpMeYpyFCUmC0accuLt/hiBxnQ1CF+nQ8Euj2r3sIAkllxG36WBU9EBkodJxExcRWAdZK5UCcAuVQnMGMLTTKyjwwxCMYBIM5MDHFEJS/FwChl83cCj9JAp9DR9cxBpyEDhrINjFCiVtIKtCDKfIpsI2klxE/ZgLeqml1koFTDqRspeTgi276vICiHga9FrpI6ieFHfhpGbMCsNvgEZJgIyy1Ndm1FCRRCtUREkZhpieJKWmJkcC8ZiSgnNh7LHoCtcByFDsx8D6RIMe1Uy7w08SQtVRzXPg0ZyDCsNAqvTFsKJT/z5BBCyw8c88oLLCZjr5yBAkAFGmmaRSGRFd/CEMpW4APNVBInMNJE9K3Aws6JyGAJwkG6S4hOKEsQepQPoqxB5GW8MYn3kgEywFIPccVMB1B3ka6zYQ4kgEUjKKMkz0+6rsfkNHIGeK7Pfa7Txfglu5f2inv3M+DbQ6EeuPDsFGTkbQE7KK/U1WPIHiD7HGN3qeNxsE5XHiCjFd2aE5EBW7LkRr7hBBoIfAMHsi4r2tI4h5ABEcsjvu8GCa4oazsNGcgOHD30IisN9XQcpNC03Cw9uAyIWgaKw7FMY7t1sjKAaEmmLrsu0ULDSxKELU9aXtT9cwaOsMgSqYwRTcTS26ciA/m2rUlU96mBZSJrpo/j5brdA7QMovis039FyXOePk0ZAKQ+sRVL11qio1GghIiEDSRQBFpQVxQLucvp+aRkwLxYl/2DeY7LH0pHsYfZm0AwiwMrXJyOjPVcxvcZXAaX8QaXUYDLKMBlFDBEWMns+LUatKWMmggQxHURxCPJCMxWFeFP/6ocnmPaW0VIqyO0WvinsC6C1tDa7sbPv/z8S8MhOr/+9uvJXaFRxfVnQbh/aDbG3ZMwPYermXIXjdtQWbMYqh8ajXEA5i6YjU8NBnmcqx6op31t1/XHl2dN2vj0vIV0Tvo6yJd2kdPcltJWX58+fOk2FWVf3tpFzoembEyvC89PtRZl0QWz0dCW8qV4UeVQvW8myn4su2gqbwzVxdeDzSpD/1DKLhpqG73lSvnOMW670e4Iw9oroKtcLNlg+4BdPsNJHrhAxQ714Wu3+JIFan6ney1ctx+FYVXKqnaxaOPhVugLt1t3o3vdAYvafXqecKRWjPO0cBOSh9v2LoG25PvwutO/65S117lYsNHrD6eD9vY3wXjoDEY3g9Fz8xhUVm10fyjk0V0DbcdAuOvcjp6my8PrXRRtDIQP094OdwTpsajT4eNzB0vtVo9185ZHdw20HbfCpD+87S+3jFUuCjZuhdGk098+bTwKbKrJ84STz3WjveVRFqizS6BDsNrFgfcpH1bcoej+h6PfT+L627oxDmlDXZUXb499M6e7tS6YjQ3G2Yzb1f3N7teGv0lZzd2abWTOwWx8m6wZoXfE/ugm7SLnQDbaVZ2MRUbqse5gtamLQ9koHrDWh1KPkkc3d7HduLVU3KOpgke11BNqnu3W7wBtY/mAtY7ulya/daxk2896fxu9jb/m66nrMu1h2b7d721ji2Twx+bRXdZss/1wLZ1/bzP2b//54/LoTjlq8y8sfaXM7//VSsOMwjTGwjv+/36vmMcy0S6rsSVK9S/z+nU/2Rssz8Ct+I3b/JKxVT9vuzRNDNf/PK633alZSd6A0l2gvc1/rne2TuHyDJx1FV4V1zhUXf23BmQsB16Js6LI+7XmWlmequJy1ZXLZJ2HjKorT0uzLDU2LoPLmM2SyyjMkssozJLLKMzy0mTkv2n1sgSlWVbLQLB2kqXXq2SgVdc/VsnYPOyuMsTQwAjk9YgAmq9F3nClDNueTTIr1s7Ia6ldrIPneu7XWayQESuano+Vsb+v1eXVhbJzGbFtO1Vh9XLYHWUgW9MjF2DktyAKPJciHeuEvnwW1TJk6tsiJnGGkW3KbFkozRCOQwOiBFK2xJjo2Wyt62WIskMlj7pAJtCx2dSIYpQ5pF6GHtHUErE+C4tZWEQpQRiEGguLqFsIu6MMUfYcM4taaWojlFhG4uSF3kZAV8iIAxEGqSVjydYIlSjEiWH4rchOIEpxoNlaSzIjLS/QqZeRpWLLxL5hSS50rCiUaWqYV6Es1stIRJjMwyoZlTIW1tfSVmCnedhEs4yW3AqMeV3QjjKQqymSkVqUzTLxMnb8mGh6+NxuamR4ehqMQ8VCqSgmItIoMCQtwSFCvkbHUahJpknz0q16GSTwsKSkfph6rGUkYw0baSsZJ2iFDI+wsJZiAX8W1sj0PKwZwjysNwuL3fml2DvJgFi2pDCyfEtDKAj9AEvWla9bq2SAK5ttKIqMFZAgkX2ybpBqvhW5EWuvTuRbcnhlm+5qGcg3FMFNfRw5iLUMW275qRZ40QoZediUhbX1lIWl0AlSJbWCedjAD/Owe8nIb9YAdMDCsQ2DILYRzgu941U5g1K2D3Lzumy2iRMCXctSRDeG+SwgofOC8dmvwK9IoMil8WxkwjIvdPNSb8qmrs8ZLGx+kXoM9JewoWWXwsb67jkDLOTgZTbtZ1hW3Qwa7WfUhj1qp6uyxG42g0Zl1IblPdDFwFxGITCXUQjMZRQCcxmFwFvKYEc46wCXImM3xuu/Ul/4ev1MThXsxoo76lbfCXd5Bu4GZyjEpR8xpZtNszD9adX31bDRuSuGtMM0K09/cTgcDofD4XA4HA6Hw+FwOJz3yv8B27wFHGBebyAAAAAASUVORK5CYII
+    </div>
+  </body>
+</html>
